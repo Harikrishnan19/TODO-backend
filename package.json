@@ -2,15 +2,20 @@
   "name": "creating_node_project",
   "version": "1.0.0",
   "description": "Demo to create node js project",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "dev-start": "nodemon app.js",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.18.1"
+    "express": "^4.18.1",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.19.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
 }
